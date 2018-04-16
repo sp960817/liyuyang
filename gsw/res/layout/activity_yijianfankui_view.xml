@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainbg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#0c99d9"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/returnimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/return_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="9"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:text="反馈详情"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/shape_bg"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@drawable/shape_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingLeft="3.0dip"
+                    android:text="意见标题 :"
+                    android:textColor="@android:color/black"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/addquestion_titletxt"
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_weight="3"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:maxLength="20"
+                    android:paddingLeft="10.0dip"
+                    android:textColor="#ff545454"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@drawable/shape_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingLeft="3.0dip"
+                    android:text="意见内容:"
+                    android:textColor="@android:color/black"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/addquestion_qstxt"
+                    android:layout_width="1px"
+                    android:layout_height="200dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_weight="3"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:gravity="top"
+                    android:maxLength="20"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="false"
+                    android:textColor="#ff545454"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@drawable/shape_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingLeft="3.0dip"
+                    android:text="反馈内容:"
+                    android:textColor="@android:color/black"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/addquestion_fktxt"
+                    android:layout_width="1px"
+                    android:layout_height="200dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_weight="3"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:gravity="top"
+                    android:maxLength="20"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="false"
+                    android:textColor="#ff545454"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

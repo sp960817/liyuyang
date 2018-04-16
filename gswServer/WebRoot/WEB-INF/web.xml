@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<!-- 过滤器 -->
+	<filter>
+		<display-name>EcodingFilter</display-name>
+		<filter-name>EcodingFilter</filter-name>
+		<filter-class>com.myweb.utils.EnCodeFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>EcodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- 系统首页-->
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- android访问 -->
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ImgUploadService</servlet-name>
+		<servlet-class>com.myweb.service.ImgUploadService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>FileUploadService</servlet-name>
+		<servlet-class>com.myweb.service.FileUploadService</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.myweb.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UserService</servlet-name>
+		<servlet-class>com.myweb.service.UserService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>GoodsServlet</servlet-name>
+		<servlet-class>com.myweb.servlet.GoodsServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>GoodsTypeService</servlet-name>
+		<servlet-class>com.myweb.service.GoodsTypeService</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>GoodsService</servlet-name>
+		<servlet-class>com.myweb.service.GoodsService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>WordsListServlet</servlet-name>
+		<servlet-class>com.myweb.servlet.WordsListServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>BoardServlet</servlet-name>
+		<servlet-class>com.myweb.servlet.BoardServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>GoodsTypeServlet</servlet-name>
+		<servlet-class>com.myweb.servlet.GoodsTypeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.myweb.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>NewsServlet</servlet-name>
+		<servlet-class>com.myweb.servlet.NewsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>com.myweb.servlet.AdminServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>NewsService</servlet-name>
+		<servlet-class>com.myweb.service.NewsService</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>NoteService</servlet-name>
+		<servlet-class>com.myweb.service.NoteService</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>YouergushiService</servlet-name>
+		<servlet-class>com.myweb.service.YouergushiService</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>QuestService</servlet-name>
+		<servlet-class>com.myweb.service.QuestService</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>QuestServlet</servlet-name>
+		<servlet-class>com.myweb.servlet.QuestServlet</servlet-class>
+	</servlet>
+<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<servlet-class>com.myweb.servlet.FileUploadServlet</servlet-class>
+	</servlet>
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>YouergushiService</servlet-name>
+		<url-pattern>/YouergushiService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>WordsListServlet</servlet-name>
+		<url-pattern>/WordsListServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GoodsTypeServlet</servlet-name>
+		<url-pattern>/GoodsTypeServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GoodsServlet</servlet-name>
+		<url-pattern>/GoodsServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NewsServlet</servlet-name>
+		<url-pattern>/NewsServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/AdminServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>QuestServlet</servlet-name>
+		<url-pattern>/QuestServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<url-pattern>/FileUploadServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- android访问 -->
+
+	<servlet-mapping>
+		<servlet-name>QuestService</servlet-name>
+		<url-pattern>/QuestService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UserService</servlet-name>
+		<url-pattern>/UserService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>FileUploadService</servlet-name>
+		<url-pattern>/FileUploadService</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>ImgUploadService</servlet-name>
+		<url-pattern>/ImgUploadService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GoodsTypeService</servlet-name>
+		<url-pattern>/GoodsTypeService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GoodsService</servlet-name>
+		<url-pattern>/GoodsService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>NewsService</servlet-name>
+		<url-pattern>/NewsService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NoteService</servlet-name>
+		<url-pattern>/NoteService</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

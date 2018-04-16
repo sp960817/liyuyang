@@ -1,0 +1,22 @@
+<html>
+<script>
+function returnVal()
+{
+    alert("aa");
+}
+</script>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>文件上传</title>
+	</head>
+	<body>
+		<form action="../FileUploadServlet" method="post"
+			enctype="multipart/form-data">
+			<input type="file" size="30" name="file01" />
+			<br>
+			<pre> <input name="submit" type="submit" value="上传">  <input
+					name="reset" type="reset" value="重置">
+</pre>
+		</form>
+	</body>
+</html>
